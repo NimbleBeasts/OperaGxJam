@@ -5,6 +5,7 @@ key_down = vk_down;
 
 cooldown = 0;
 steps_between_shots = 10;
+knockback_power = 5;
 
 gun_offset_x = 33;
 gun_offset_y = -6;

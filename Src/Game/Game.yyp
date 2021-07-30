@@ -10,6 +10,8 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"spr_ufo","path":"sprites/spr_ufo/spr_ufo.yy",},"order":0,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":0,},
+    {"id":{"name":"obj_enemyBullet","path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},"order":1,},
+    {"id":{"name":"spr_enemyBullet","path":"sprites/spr_enemyBullet/spr_enemyBullet.yy",},"order":1,},
     {"id":{"name":"spr_ice","path":"sprites/spr_ice/spr_ice.yy",},"order":1,},
     {"id":{"name":"scr_game","path":"scripts/scr_game/scr_game.yy",},"order":0,},
     {"id":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"order":0,},

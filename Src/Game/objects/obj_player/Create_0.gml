@@ -9,9 +9,9 @@ gravity = 0.1;
 ice_step_count = 120;
 ice_cooldown = 0;
 
-function knockback(knockback_direction) {
+function knockback(knockback_direction, knockback_power) {
 	direction = knockback_direction;
-	speed = -5;
+	speed = -knockback_power;
 }
 
 function player_stuck_ice() {
