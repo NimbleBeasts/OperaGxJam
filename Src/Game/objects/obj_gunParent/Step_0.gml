@@ -3,7 +3,7 @@ y_input = keyboard_check(key_down) - keyboard_check(key_up);
 
 var _angle = point_direction(x, y, x + x_input, y + y_input);
 
-if (x_input != 0 or y_input != 0) and (cooldown < 1) {
+if (x_input != 0 or y_input != 0) and (cooldown < 1) and (not global.player_stuck) {
 	image_angle = _angle;
 	
 	var _bullet_spawn_x = x + lengthdir_x(gun_length, _angle + gun_direction)
