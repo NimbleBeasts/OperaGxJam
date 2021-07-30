@@ -10,7 +10,7 @@ if _colliding_gun and can_pickup_gun {
 	gun = _colliding_gun;
 	gun.pickup();
 	can_pickup_gun = false;
-	alarm[0] = 30; // pickup cooldown
+	alarm[0] = 15; // pickup cooldown
 }
 	
 
