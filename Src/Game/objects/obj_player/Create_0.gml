@@ -3,7 +3,8 @@ global.player_score = 0;
 global.player_lives = 10;
 global.player_stuck = false;
 
-gun = instance_create_layer(x, y, "Gun", obj_gunParent);
+//gun = instance_create_layer(x, y, "Gun", obj_gunMG);
+gun = noone;
 
 gravity = 0.1; 
 ice_step_count = 120;

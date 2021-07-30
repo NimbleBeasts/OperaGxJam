@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 3,
@@ -7,14 +7,14 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 0,
+  "bbox_left": -1,
   "bbox_right": 33,
-  "bbox_top": 0,
-  "bbox_bottom": 15,
+  "bbox_top": -1,
+  "bbox_bottom": 16,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 34,
+  "width": 26,
   "height": 16,
   "textureGroupId": {
     "name": "Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"486030df-ace0-410e-a74b-3248ad35fe4f","path":"sprites/spr_shotgun/spr_shotgun.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"486030df-ace0-410e-a74b-3248ad35fe4f","path":"sprites/spr_shotgun/spr_shotgun.yy",},"LayerId":{"name":"e2af5dce-f4c5-4435-a488-5e7d1e1fb8c8","path":"sprites/spr_shotgun/spr_shotgun.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_shotgun","path":"sprites/spr_shotgun/spr_shotgun.yy",},"resourceVersion":"1.0","name":"486030df-ace0-410e-a74b-3248ad35fe4f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"24cb1fef-8829-4e12-82d0-9705230d7166","path":"sprites/spr_gunPlasmaRifle/spr_gunPlasmaRifle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"24cb1fef-8829-4e12-82d0-9705230d7166","path":"sprites/spr_gunPlasmaRifle/spr_gunPlasmaRifle.yy",},"LayerId":{"name":"4530ef9a-9695-477f-8517-ac0c65775129","path":"sprites/spr_gunPlasmaRifle/spr_gunPlasmaRifle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_gunPlasmaRifle","path":"sprites/spr_gunPlasmaRifle/spr_gunPlasmaRifle.yy",},"resourceVersion":"1.0","name":"24cb1fef-8829-4e12-82d0-9705230d7166","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_shotgun","path":"sprites/spr_shotgun/spr_shotgun.yy",},
+    "spriteId": {"name":"spr_gunPlasmaRifle","path":"sprites/spr_gunPlasmaRifle/spr_gunPlasmaRifle.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"12fb7d39-b568-4cc2-8871-a3008b58fded","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"486030df-ace0-410e-a74b-3248ad35fe4f","path":"sprites/spr_shotgun/spr_shotgun.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8d12f342-ed79-4a2c-8e61-e7ca999be5c8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"24cb1fef-8829-4e12-82d0-9705230d7166","path":"sprites/spr_gunPlasmaRifle/spr_gunPlasmaRifle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 8,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_shotgun","path":"sprites/spr_shotgun/spr_shotgun.yy",},
+    "parent": {"name":"spr_gunPlasmaRifle","path":"sprites/spr_gunPlasmaRifle/spr_gunPlasmaRifle.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_shotgun",
+    "name": "spr_gunPlasmaRifle",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e2af5dce-f4c5-4435-a488-5e7d1e1fb8c8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"4530ef9a-9695-477f-8517-ac0c65775129","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Weapons.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_shotgun",
+  "name": "spr_gunPlasmaRifle",
   "tags": [],
   "resourceType": "GMSprite",
 }

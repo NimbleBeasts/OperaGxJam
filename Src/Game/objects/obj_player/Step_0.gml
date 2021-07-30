@@ -1,5 +1,7 @@
-gun.x = x + sprite_width/2;
-gun.y = y;
+if gun  {
+	gun.x = x + sprite_width/2;
+	gun.y = y;
+}
 
 if global.player_stuck {
 	ice_cooldown -= 1;

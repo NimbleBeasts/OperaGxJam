@@ -17,7 +17,9 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":128.0,"resourceVersion":"1.0","name":"inst_6E0CDD58","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":-201,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":-101,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Traps","tags":[],"resourceType":"GMRInstanceLayer",},
-    {"instances":[],"visible":true,"depth":-1,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Gun","tags":[],"resourceType":"GMRInstanceLayer",},
+    {"instances":[
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_gunRocketLauncher","path":"objects/obj_gunRocketLauncher/obj_gunRocketLauncher.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":56.0,"y":122.0,"resourceVersion":"1.0","name":"inst_45332A36","tags":[],"resourceType":"GMRInstance",},
+      ],"visible":true,"depth":-1,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":2,"gridY":2,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Gun","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":64.0,"resourceVersion":"1.0","name":"inst_6874520F","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
@@ -29,6 +31,7 @@
   "instanceCreationOrder": [
     {"name":"inst_6874520F","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_6E0CDD58","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_45332A36","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
