@@ -8,9 +8,11 @@
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"order":0,},
     {"id":{"name":"spr_shotgun","path":"sprites/spr_shotgun/spr_shotgun.yy",},"order":0,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"spr_ufo","path":"sprites/spr_ufo/spr_ufo.yy",},"order":0,},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},"order":0,},
     {"id":{"name":"spr_ice","path":"sprites/spr_ice/spr_ice.yy",},"order":1,},
     {"id":{"name":"scr_game","path":"scripts/scr_game/scr_game.yy",},"order":0,},
+    {"id":{"name":"obj_enemyParent","path":"objects/obj_enemyParent/obj_enemyParent.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
@@ -49,6 +51,8 @@
     {"folderPath":"folders/Objects/Weapons.yy","order":2,"resourceVersion":"1.0","name":"Weapons","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Traps.yy","order":3,"resourceVersion":"1.0","name":"Traps","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Traps.yy","order":3,"resourceVersion":"1.0","name":"Traps","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Enemies.yy","order":4,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Enemies.yy","order":4,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

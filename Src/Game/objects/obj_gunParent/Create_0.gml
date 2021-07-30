@@ -6,8 +6,8 @@ key_down = vk_down;
 cooldown = 0;
 steps_between_shots = 10;
 
-gun_offset_x = 31;
-gun_offset_y = -1;
+gun_offset_x = 33;
+gun_offset_y = -6;
 
 gun_direction = point_direction(0, 0, gun_offset_x, gun_offset_y)
 gun_length = point_distance(0, 0, gun_offset_x, gun_offset_y)

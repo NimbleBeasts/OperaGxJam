@@ -12,6 +12,7 @@ if (x_input != 0 or y_input != 0) and (cooldown < 1) and (not global.player_stuc
 	var _bullet = instance_create_layer(_bullet_spawn_x, _bullet_spawn_y, "Instances", obj_bullet);
 	
 	_bullet.direction = _angle;	
+	_bullet.image_angle = _angle;
 	
 	cooldown = steps_between_shots;
 	global.player.knockback(_angle);
