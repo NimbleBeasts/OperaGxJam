@@ -3,13 +3,17 @@
     {"id":{"name":"spr_gunPlasmaRifle","path":"sprites/spr_gunPlasmaRifle/spr_gunPlasmaRifle.yy",},"order":4,},
     {"id":{"name":"obj_ice","path":"objects/obj_ice/obj_ice.yy",},"order":1,},
     {"id":{"name":"obj_gunRailgun","path":"objects/obj_gunRailgun/obj_gunRailgun.yy",},"order":5,},
+    {"id":{"name":"spr_groundObject","path":"sprites/spr_groundObject/spr_groundObject.yy",},"order":8,},
     {"id":{"name":"spr_gunRailgun","path":"sprites/spr_gunRailgun/spr_gunRailgun.yy",},"order":3,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":1,},
+    {"id":{"name":"tile_ground","path":"tilesets/tile_ground/tile_ground.yy",},"order":1,},
     {"id":{"name":"spr_spike","path":"sprites/spr_spike/spr_spike.yy",},"order":0,},
     {"id":{"name":"obj_gunParent","path":"objects/obj_gunParent/obj_gunParent.yy",},"order":1,},
+    {"id":{"name":"spr_tileGround","path":"sprites/spr_tileGround/spr_tileGround.yy",},"order":9,},
     {"id":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"order":0,},
     {"id":{"name":"obj_gunMG","path":"objects/obj_gunMG/obj_gunMG.yy",},"order":2,},
+    {"id":{"name":"obj_groundObject","path":"objects/obj_groundObject/obj_groundObject.yy",},"order":5,},
     {"id":{"name":"obj_gunPlasmaRifle","path":"objects/obj_gunPlasmaRifle/obj_gunPlasmaRifle.yy",},"order":4,},
     {"id":{"name":"spr_empty","path":"sprites/spr_empty/spr_empty.yy",},"order":5,},
     {"id":{"name":"spr_gunShotgun","path":"sprites/spr_gunShotgun/spr_gunShotgun.yy",},"order":0,},
@@ -72,7 +76,9 @@
   "TextureGroups": [
     {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"CopyToMask":153157610357391598,"filePath":"datafiles","resourceVersion":"1.0","name":"test.json","resourceType":"GMIncludedFile",},
+  ],
   "MetaData": {
     "IDEVersion": "2.3.3.574",
   },
