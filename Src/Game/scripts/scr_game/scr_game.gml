@@ -1,13 +1,16 @@
 
 
-
 function subtract_player_lives(damage) {
 	global.player_lives -= damage;
 	show_debug_message("Life = " + string(global.player_lives));
 }
 
 function create_tiles() {
-	var _map_id = layer_tilemap_get_id("TileGround");
+	tiles = [];
+	tiles[0] = obj_tileWall;
+	tiles[1] = obj_tileGround;
+	tiles[2] = obj_tileRightEnd;
+	tiles[3] = obj_tileLeftEnd;
 
 	
 	tile_map = ds_map_create();
@@ -34,8 +37,7 @@ function create_tiles() {
 		_array_keys[i][0] = real(_array_keys[i][0]);
 		_array_keys[i][1] = real(_array_keys[i][1]);
 
-		tilemap_set(_map_id, _array_values[i] , _array_keys[i][0], _array_keys[i][1]); 
-		instance_create_layer(_array_keys[i][0]*32, _array_keys[i][1]*32, "GroundObjects", obj_groundObject);
+		instance_create_layer(_array_keys[i][0]*32, _array_keys[i][1]*32, "Tiles",  tiles[_array_values[i]]); 
 	}
 	
 }

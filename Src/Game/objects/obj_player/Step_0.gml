@@ -1,3 +1,4 @@
+
 if gun  {
 	gun.x = x + sprite_width/2;
 	gun.y = y;
@@ -20,73 +21,44 @@ if _colliding_gun and can_pickup_gun {
 }
 
 
-#region tile collision
-//right collision
-if (tilemap_get_at_pixel(tile_ground_id, bbox_right + hspeed, y) != 0) {
-	x = round(x);
-	while (tilemap_get_at_pixel(tile_ground_id, bbox_right, y) == 0) {
-		x += 1;	
-	}
+#region collision check
+if place_meeting(x + hsp, y, obj_tileWall) {
 	
-	while (tilemap_get_at_pixel(tile_ground_id, bbox_right, y) != 0) {
-		x -= 1;	
+	while !place_meeting(x + sign(hsp), y, obj_tileWall) {
+		x += sign(hsp);
 	}
-	hspeed = 0.0;
+
+	hsp = 0;
 }
+x += hsp;
 
-// left collision
-if (tilemap_get_at_pixel(tile_ground_id, bbox_left + hspeed, y) != 0) {
-	x = round(x);
-	while (tilemap_get_at_pixel(tile_ground_id, bbox_left, y) == 0) {
-		x -= 1;	
+if place_meeting(x, y + vsp, obj_tileWall) {
+	
+	while !place_meeting(x, y + sign(vsp), obj_tileWall) {
+		y += sign(vsp);
 	}
 	
-	while (tilemap_get_at_pixel(tile_ground_id, bbox_left, y) != 0) {
-		x += 1;	
-	}
-	hspeed = 0.0;
-}
-
-//up collision
-if (tilemap_get_at_pixel(tile_ground_id, x, bbox_top + vspeed) != 0) {
-	y = round(y);
-	while (tilemap_get_at_pixel(tile_ground_id, x, bbox_top) == 0) {
-		y -= 1;	
-	}
-	
-	while (tilemap_get_at_pixel(tile_ground_id, x, bbox_top) != 0) {
-		y += 1;	
-	}
-	
-	vspeed = 0.0;
-}
-
-//down collision
-if (tilemap_get_at_pixel(tile_ground_id, x, bbox_bottom + vspeed) != 0) {
-	y = round(y);
-	while (tilemap_get_at_pixel(tile_ground_id, x, bbox_bottom) == 0) {
-		y += 1;	
-	}
-	
-	while (tilemap_get_at_pixel(tile_ground_id, x, bbox_bottom) != 0) {
-		y -= 1;	
-	}
-	
-	vspeed = 0.0;
-
+	vsp = 0;
 } 
 
+y += vsp;
+y += current_gravity;
 
 #endregion
 
+if !keyboard_check(key_up) and !keyboard_check(key_down) vsp = lerp(vsp, 0, 0.05);
+if !keyboard_check(key_right) and !keyboard_check(key_left) hsp = lerp(hsp, 0, 0.05);
+
+
 #region check if grounded
 
-if place_meeting(x, y + 2, obj_groundObject) {
-	global.player_on_ground = true;
-	hspeed = 0;
-}
+
+if place_meeting(x, y + current_gravity, obj_tileWall) global.player_on_ground = true;
 else global.player_on_ground = false;
  
 #endregion
 
-if global.player_on_ground or global.player_stuck gravity = 0.0; else gravity = gravity_value;
+if global.player_on_ground or global.player_stuck {
+	current_gravity = 0.0; 
+} else current_gravity = gravity_value; 
+

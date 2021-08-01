@@ -9,26 +9,36 @@ can_pickup_gun = true;
 //gun = instance_create_layer(x, y, "Gun", obj_gunMG);
 gun = noone;
 
-gravity_value = 0.1;
+gravity_value = 2.0;
+current_gravity = gravity_value
+hsp = 0;
+vsp = 0;
 
-gravity = gravity_value; 
+key_up = vk_up;
+key_down = vk_down;
+key_left = vk_left;
+key_right = vk_right;
 
-tile_ground_id = layer_tilemap_get_id("TileGround");
 create_tiles();
 
 function knockback(knockback_direction, knockback_power) {
-	direction = knockback_direction;
-	speed = -knockback_power;
+	hsp = lengthdir_x(-knockback_power, knockback_direction) * 2;
+	vsp = lengthdir_y(-knockback_power, knockback_direction) * 2;
+	
+	//direction = knockback_direction;
+	//speed = -knockback_power;
 }
 
 function player_stuck_ice() {
-	gravity = 0.0;
+	current_gravity = 0.0;
 	speed = 0;
 	global.player_stuck = true;
 	alarm[1] = 2 * room_speed;
 }
 
 function player_unstuck_ice() {
-	gravity = gravity_value;
+	current_gravity = gravity_value;
 	global.player_stuck = false;
 }
+
+
