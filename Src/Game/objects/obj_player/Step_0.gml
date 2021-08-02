@@ -17,6 +17,7 @@ if _colliding_gun and can_pickup_gun {
 		gun.pickup();
 		can_pickup_gun = false;
 		alarm[0] = 30; // pickup cooldown
+		audio_play_sound(snd_weapon_change, 10, false);
 	}
 }
 

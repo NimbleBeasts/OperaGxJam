@@ -53,6 +53,7 @@ function check_for_shots() {
 	
 				cooldown = steps_between_shots;
 				global.player.knockback(_angle, knockback_power);
+				audio_play_sound(snd_mg, 10, false); //TODO: check for weapon type
 		
 			}
 		}
