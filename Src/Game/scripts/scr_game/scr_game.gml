@@ -36,10 +36,13 @@ function create_tiles() {
 		_array_keys[i] = split_string(_array_keys[i], ",");
 		_array_keys[i][0] = real(_array_keys[i][0]);
 		_array_keys[i][1] = real(_array_keys[i][1]);
-
-		instance_create_layer(_array_keys[i][0]*32, _array_keys[i][1]*32, "Tiles",  tiles[_array_values[i]]); 
+	
+		var _tile_create_y_pos = _array_keys[i][1]*32 + (room_height * global.num_created_tiles);
+	
+		instance_create_layer(_array_keys[i][0]*32, _tile_create_y_pos, "Tiles",  tiles[_array_values[i]]); 
 	}
 	
+	global.num_created_tiles += 1;
 }
 
 // from https://www.reddit.com/r/gamemaker/comments/3zxota/splitting_strings/ by u/chaomoonx with minor edits

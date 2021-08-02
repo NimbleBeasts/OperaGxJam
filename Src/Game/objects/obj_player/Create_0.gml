@@ -3,6 +3,8 @@ global.player_score = 0;
 global.player_lives = 10;
 global.player_stuck = false;
 global.player_on_ground = false;
+global.num_created_tiles = 0;
+
 
 can_pickup_gun = true;
 
@@ -20,6 +22,7 @@ key_left = vk_left;
 key_right = vk_right;
 
 create_tiles();
+alarm[3] = 2*room_speed;
 
 function knockback(knockback_direction, knockback_power) {
 	hsp = lengthdir_x(-knockback_power, knockback_direction) * 2;
