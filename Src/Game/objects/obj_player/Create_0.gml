@@ -41,4 +41,6 @@ function player_unstuck_ice() {
 	global.player_stuck = false;
 }
 
-
+function player_add_coin() {
+	audio_play_sound(snd_coin, 11, false);
+}

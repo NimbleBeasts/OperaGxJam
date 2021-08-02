@@ -21,6 +21,7 @@
     {"id":{"name":"obj_gunMG","path":"objects/obj_gunMG/obj_gunMG.yy",},"order":2,},
     {"id":{"name":"obj_groundObject","path":"objects/obj_groundObject/obj_groundObject.yy",},"order":5,},
     {"id":{"name":"snd_rocket","path":"sounds/snd_rocket/snd_rocket.yy",},"order":6,},
+    {"id":{"name":"obj_coin","path":"objects/obj_coin/obj_coin.yy",},"order":0,},
     {"id":{"name":"obj_gunPlasmaRifle","path":"objects/obj_gunPlasmaRifle/obj_gunPlasmaRifle.yy",},"order":4,},
     {"id":{"name":"spr_tileGround","path":"sprites/spr_tileGround/spr_tileGround.yy",},"order":0,},
     {"id":{"name":"obj_tileLeftEnd","path":"objects/obj_tileLeftEnd/obj_tileLeftEnd.yy",},"order":2,},
@@ -90,6 +91,8 @@
     {"folderPath":"folders/Objects/Enemies.yy","order":4,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/Tiles.yy","order":6,"resourceVersion":"1.0","name":"Tiles","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Tiles.yy","order":9,"resourceVersion":"1.0","name":"Tiles","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Objects/Others.yy","order":7,"resourceVersion":"1.0","name":"Others","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Others.yy","order":10,"resourceVersion":"1.0","name":"Others","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
