@@ -1,4 +1,5 @@
 event_inherited();
+weapon = Weapon.Shotgun;
 steps_between_shots = 30;
 knockback_power = 4;
 

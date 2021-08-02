@@ -1,4 +1,5 @@
 event_inherited();
+weapon = Weapon.Rocket;
 steps_between_shots = 40;
 knockback_power = 5;
 

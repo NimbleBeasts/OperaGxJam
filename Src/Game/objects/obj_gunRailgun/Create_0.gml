@@ -1,4 +1,5 @@
 event_inherited();
+weapon = Weapon.Railgun;
 steps_between_shots = 20;
 knockback_power = 3;
 

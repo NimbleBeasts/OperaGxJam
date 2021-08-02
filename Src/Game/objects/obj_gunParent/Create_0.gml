@@ -1,3 +1,12 @@
+enum Weapon
+{
+    Mg,
+    Plasma,
+    Railgun,
+    Rocket,
+    Shotgun
+}
+
 is_picked_up = false;
 
 key_right = vk_right;
@@ -5,6 +14,7 @@ key_left = vk_left;
 key_up = vk_up;
 key_down = vk_down;
 
+weapon = Weapon.Mg;
 cooldown = 0;
 steps_between_shots = 10;
 knockback_power = 5;
@@ -53,7 +63,28 @@ function check_for_shots() {
 	
 				cooldown = steps_between_shots;
 				global.player.knockback(_angle, knockback_power);
-				audio_play_sound(snd_mg, 10, false); //TODO: check for weapon type
+				
+				switch (weapon) {
+					case Weapon.Mg:
+						audio_play_sound(snd_mg, 10, false);
+						break;
+					case Weapon.Plasma:
+						audio_play_sound(snd_plasma, 10, false);
+						break;
+					case Weapon.Railgun:
+						audio_play_sound(snd_railgun, 10, false);
+						break;
+					case Weapon.Rocket:
+						audio_play_sound(snd_rocket, 10, false);
+						break;
+					case Weapon.Shotgun:
+						audio_play_sound(snd_shotgun, 10, false);
+						break;
+					default:
+						audio_play_sound(snd_mg, 10, false);
+						break;
+				}
+				
 		
 			}
 		}
