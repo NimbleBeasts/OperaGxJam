@@ -6,13 +6,14 @@ function subtract_player_lives(damage) {
 }
 
 function create_tiles() {
+	randomize();
+	var _level_index = irandom_range(1, global.num_tile_levels);
 	tiles = [];
 	tiles[0] = obj_tileWall;
 	tiles[1] = obj_tileGround;
 	tiles[2] = obj_tileRightEnd;
 	tiles[3] = obj_tileLeftEnd;
 
-	
 	tile_map = ds_map_create();
 	
 	if (file_exists("test.json")) {
@@ -26,6 +27,7 @@ function create_tiles() {
 		file_text_close(json);
 
 		tile_map = json_decode(data);
+		tile_map = tile_map[? string(_level_index)];
 	}
 	
 	

@@ -4,7 +4,7 @@ global.player_lives = 10;
 global.player_stuck = false;
 global.player_on_ground = false;
 global.num_created_tiles = 0;
-
+global.num_tile_levels = 2;
 
 can_pickup_gun = true;
 
