@@ -22,6 +22,11 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_gunMG","path":"objects/obj_gunMG/obj_gunMG.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":142.0,"y":192.0,"resourceVersion":"1.0","name":"inst_4087FEEF","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"obj_gunMG","path":"objects/obj_gunMG/obj_gunMG.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":438.0,"y":246.0,"resourceVersion":"1.0","name":"inst_2D311E1D","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_gunParent","path":"objects/obj_gunParent/obj_gunParent.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":380.0,"y":192.0,"resourceVersion":"1.0","name":"inst_1A1CD2DA","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_gunPlasmaRifle","path":"objects/obj_gunPlasmaRifle/obj_gunPlasmaRifle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":302.0,"y":186.0,"resourceVersion":"1.0","name":"inst_455526F7","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_gunRailgun","path":"objects/obj_gunRailgun/obj_gunRailgun.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":254.0,"y":182.0,"resourceVersion":"1.0","name":"inst_318C85AA","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_gunRocketLauncher","path":"objects/obj_gunRocketLauncher/obj_gunRocketLauncher.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":196.0,"resourceVersion":"1.0","name":"inst_708783AF","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"obj_gunShotgun","path":"objects/obj_gunShotgun/obj_gunShotgun.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":34.0,"y":116.0,"resourceVersion":"1.0","name":"inst_67A6B62D","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":-24,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":2,"gridY":2,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Gun","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":-20,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"GroundObjects","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -37,6 +42,11 @@
     {"name":"inst_4087FEEF","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_2D311E1D","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_48E8E078","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_1A1CD2DA","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_455526F7","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_318C85AA","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_708783AF","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_67A6B62D","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

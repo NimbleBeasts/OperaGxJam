@@ -11,7 +11,7 @@ can_pickup_gun = true;
 //gun = instance_create_layer(x, y, "Gun", obj_gunMG);
 gun = noone;
 
-gravity_value = 2.0;
+gravity_value = 3.0;
 current_gravity = gravity_value
 hsp = 0;
 vsp = 0;

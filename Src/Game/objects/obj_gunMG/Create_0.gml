@@ -1,7 +1,7 @@
 event_inherited();
 weapon = Weapon.Mg;
 steps_between_shots = 10;
-knockback_power = 2;
+knockback_power = 3;
 
 gun_offset_x = 29;
 gun_offset_y = 3;
