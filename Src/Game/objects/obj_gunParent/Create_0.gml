@@ -1,10 +1,10 @@
 enum Weapon
 {
-    Mg,
-    Plasma,
-    Railgun,
-    Rocket,
-    Shotgun
+    Mg = obj_p_mg,
+    Plasma = obj_p_pl,
+    Railgun = obj_p_rg,
+    Rocket = obj_p_rl,
+    Shotgun = obj_p_sg
 }
 
 is_picked_up = false;
@@ -61,10 +61,10 @@ function check_for_shots() {
 				var _bullet_spawn_x = x + lengthdir_x(gun_length, _angle + gun_direction)
 				var _bullet_spawn_y = y + lengthdir_y(gun_length, _angle + gun_direction)
 
-				var _bullet = instance_create_layer(_bullet_spawn_x, _bullet_spawn_y, "Instances", obj_bullet);
+				var _bullet = instance_create_layer(_bullet_spawn_x, _bullet_spawn_y, "Instances", weapon);
 	
 				_bullet.direction = _angle;	
-				_bullet.image_angle = _angle;
+				_bullet.image_angle = -_angle;
 	
 				cooldown = steps_between_shots;
 				owner_player.knockback(_angle, knockback_power);
