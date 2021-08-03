@@ -40,6 +40,10 @@ if is_on_ground {
 	if hsp == 0 set_anim("idle") else set_anim("run");
 }	
 
+vsp += current_gravity;
+if vsp > gravity_value vsp = gravity_value;
+
+
 #region collision check
 if place_meeting(x + hsp, y, obj_tileWall) {
 	
@@ -61,11 +65,9 @@ if place_meeting(x, y + vsp, obj_tileWall) {
 } 
 
 y += vsp;
-y += current_gravity;
 
 #endregion
 
-if !keyboard_check(key_up) and !keyboard_check(key_down) vsp = lerp(vsp, 0, 0.05);
 if !keyboard_check(key_right) and !keyboard_check(key_left) hsp = lerp(hsp, 0, 0.05);
 
 
@@ -79,6 +81,7 @@ if place_meeting(x, y + current_gravity + 2, obj_tileWall) {
 else {
 	if player_num == 1 global.player1_on_ground = false; else global.player2_on_ground = false;
 	is_on_ground = false;
+	set_anim("jump");
 }
  
 #endregion

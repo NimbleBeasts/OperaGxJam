@@ -7,7 +7,6 @@ is_on_ground = false;
 
 can_pickup_gun = true;
 
-//gun = instance_create_layer(x, y, "Gun", obj_gunMG);
 gun = noone;
 
 gravity_value = 3.0;
@@ -24,11 +23,8 @@ create_tiles();
 alarm[3] = 2*room_speed;
 
 function knockback(knockback_direction, knockback_power) {
-	hsp = lengthdir_x(-knockback_power, knockback_direction) * 2;
-	vsp = lengthdir_y(-knockback_power, knockback_direction) * 2;
-	
-	//direction = knockback_direction;
-	//speed = -knockback_power;
+	hsp = lengthdir_x(-knockback_power, knockback_direction) * 2.5;
+	vsp = lengthdir_y(-knockback_power, knockback_direction) * 5;
 }
 
 function player_stuck_ice() {
