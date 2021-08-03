@@ -47,6 +47,7 @@ function check_for_shots() {
 	if is_picked_up {
 		if (x_input != 0 or y_input != 0) and (not global.player_stuck) {
 			image_angle = _angle; // can change where gun is facing towards even if still in cooldown
+
 			
 			// if the player is on ground and is not aiming down, return
 			if (global.player_on_ground) and !(_angle == 270 or _angle == 315 or _angle == 225) {return;}
