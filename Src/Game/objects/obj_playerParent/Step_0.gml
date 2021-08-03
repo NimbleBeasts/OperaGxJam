@@ -1,13 +1,14 @@
 
 if gun  {
-	gun.x = x + sprite_width/2;
+	//gun.x = x + sprite_width/2;
+	gun.x = x;
 	gun.y = y;
 }
 
 // gun pickup
 var _colliding_gun = instance_place(x, y, obj_gunParent);
 
-if _colliding_gun and can_pickup_gun {
+if _colliding_gun and can_pickup_gun and not _colliding_gun.is_picked_up{
 	if gun and gun != _colliding_gun { 
 		gun.drop(); 
 	}
@@ -15,12 +16,29 @@ if _colliding_gun and can_pickup_gun {
 	if not gun or gun != _colliding_gun {
 		gun = _colliding_gun;
 		gun.pickup();
+		gun.owner_player = id;
+		
+		gun.key_right = key_right;
+		gun.key_left = key_left;
+		gun.key_up = key_up;
+		gun.key_down = key_down;
+
 		can_pickup_gun = false;
 		alarm[0] = 30; // pickup cooldown
 		audio_play_sound(snd_weapon_change, 10, false);
 	}
 }
 
+if gun {
+	gun.is_player_grounded = is_on_ground;
+	gun.is_player_stuck = is_stuck
+}
+
+
+if is_on_ground {
+	hsp = (keyboard_check(key_right) - keyboard_check(key_left)) * 4;
+	if hsp == 0 set_anim("idle") else set_anim("run");
+}	
 
 #region collision check
 if place_meeting(x + hsp, y, obj_tileWall) {
@@ -54,12 +72,17 @@ if !keyboard_check(key_right) and !keyboard_check(key_left) hsp = lerp(hsp, 0, 0
 #region check if grounded
 
 
-if place_meeting(x, y + current_gravity, obj_tileWall) global.player_on_ground = true;
-else global.player_on_ground = false;
+if place_meeting(x, y + current_gravity + 2, obj_tileWall) {
+	if player_num == 1 global.player1_on_ground = true; else global.player2_on_ground = true;
+	is_on_ground = true;
+}
+else {
+	if player_num == 1 global.player1_on_ground = false; else global.player2_on_ground = false;
+	is_on_ground = false;
+}
  
 #endregion
 
-if global.player_on_ground or global.player_stuck {
+if is_on_ground or is_stuck {
 	current_gravity = 0.0; 
 } else current_gravity = gravity_value; 
-

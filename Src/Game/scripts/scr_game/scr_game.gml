@@ -1,8 +1,13 @@
 
 
-function subtract_player_lives(damage) {
-	global.player_lives -= damage;
-	show_debug_message("Life = " + string(global.player_lives));
+function subtract_player_lives(damage, player_num) {
+	if player_num == 1 global.player1_lives -= damage; else global.player2_lives -= damage;
+}
+
+function set_camera_pos_correctly() {
+	half_view_height = camera_get_view_height(view_camera[0]) / 2;
+	avg_y = (global.player1.y + global.player2.y) / 2;
+	camera_set_view_pos(view_camera[0], 0 , avg_y - half_view_height);
 }
 
 function create_tiles() {

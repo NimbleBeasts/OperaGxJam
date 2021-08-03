@@ -1,0 +1,1 @@
+set_camera_pos_correctly();

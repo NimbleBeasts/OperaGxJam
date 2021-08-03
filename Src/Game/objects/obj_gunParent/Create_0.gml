@@ -9,6 +9,10 @@ enum Weapon
 
 is_picked_up = false;
 
+is_player_stuck = false;
+is_player_grounded = false;
+owner_player = noone;
+
 key_right = vk_right;
 key_left = vk_left;
 key_up = vk_up;
@@ -45,12 +49,12 @@ function check_for_shots() {
 	var _angle = point_direction(x, y, x + x_input, y + y_input);
 
 	if is_picked_up {
-		if (x_input != 0 or y_input != 0) and (not global.player_stuck) {
+		if (x_input != 0 or y_input != 0) and (not is_player_stuck) {
 			image_angle = _angle; // can change where gun is facing towards even if still in cooldown
 
 			
 			// if the player is on ground and is not aiming down, return
-			if (global.player_on_ground) and !(_angle == 270 or _angle == 315 or _angle == 225) {return;}
+			if (is_player_grounded) and !(_angle == 270 or _angle == 315 or _angle == 225) {return;}
 			
 			
 			if (cooldown < 1) {
@@ -63,7 +67,7 @@ function check_for_shots() {
 				_bullet.image_angle = _angle;
 	
 				cooldown = steps_between_shots;
-				global.player.knockback(_angle, knockback_power);
+				owner_player.knockback(_angle, knockback_power);
 				
 				switch (weapon) {
 					case Weapon.Mg:
