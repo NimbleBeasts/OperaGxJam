@@ -1,5 +1,5 @@
-with(weaponSpawner) {
-	if (weaponSpawner.timeout) {
-		object = weaponSpawner.pickup();
+with(other) {
+	if (timeout) {
+		colliding_gun = spawn_gun();
 	}
 }

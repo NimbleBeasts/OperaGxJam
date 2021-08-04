@@ -1,7 +1,7 @@
 event_inherited();
 weapon = Weapon.Railgun;
-steps_between_shots = 20;
-knockback_power = 3;
+steps_between_shots = 15;
+knockback_power = 3.5;
 
 gun_offset_x = 24;
 gun_offset_y = -1;

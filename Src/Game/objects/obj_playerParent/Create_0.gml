@@ -1,5 +1,3 @@
-global.num_created_tiles = 0;
-global.num_tile_levels = 2;
 player_num = 1;
 
 is_stuck = false;
@@ -11,6 +9,7 @@ gun = noone;
 
 gravity_value = 3.0;
 current_gravity = gravity_value
+add_gravity = true;
 hsp = 0;
 vsp = 0;
 
@@ -19,13 +18,12 @@ key_down = vk_down;
 key_left = vk_left;
 key_right = vk_right;
 
-create_tiles();
-alarm[3] = 2*room_speed;
 
 function knockback(knockback_direction, knockback_power) {
 	hsp = lengthdir_x(-knockback_power, knockback_direction) * 2.5;
 	vsp = lengthdir_y(-knockback_power, knockback_direction) * 5;
 }
+
 
 function player_stuck_ice() {
 	current_gravity = 0.0;

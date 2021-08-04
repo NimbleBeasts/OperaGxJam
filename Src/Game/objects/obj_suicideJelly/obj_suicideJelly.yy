@@ -1,16 +1,13 @@
 {
   "spriteId": {
-    "name": "spr_player1_idle",
-    "path": "sprites/spr_player1_idle/spr_player1_idle.yy",
+    "name": "spr_suicideJelly",
+    "path": "sprites/spr_suicideJelly/spr_suicideJelly.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_playerParent",
-    "path": "objects/obj_playerParent/obj_playerParent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,17 +21,18 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_spike","path":"objects/obj_spike/obj_spike.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_playerParent","path":"objects/obj_playerParent/obj_playerParent.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player1",
+  "name": "obj_suicideJelly",
   "tags": [],
   "resourceType": "GMObject",
 }

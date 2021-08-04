@@ -6,15 +6,15 @@ if gun  {
 }
 
 // gun pickup
-var _colliding_gun = instance_place(x, y, obj_gunParent);
+colliding_gun = instance_place(x, y, obj_gunParent);
 
-if _colliding_gun and can_pickup_gun and not _colliding_gun.is_picked_up{
-	if gun and gun != _colliding_gun { 
+if colliding_gun and can_pickup_gun and not colliding_gun.is_picked_up {
+	if gun and gun != colliding_gun { 
 		gun.drop(); 
 	}
 	
-	if not gun or gun != _colliding_gun {
-		gun = _colliding_gun;
+	if not gun or gun != colliding_gun {
+		gun = colliding_gun;
 		gun.pickup();
 		gun.owner_player = id;
 		
@@ -24,7 +24,7 @@ if _colliding_gun and can_pickup_gun and not _colliding_gun.is_picked_up{
 		gun.key_down = key_down;
 
 		can_pickup_gun = false;
-		alarm[0] = 30; // pickup cooldown
+		alarm[0] = 1 * room_speed; // pickup cooldown
 		audio_play_sound(snd_weapon_change, 10, false);
 	}
 }
@@ -40,7 +40,7 @@ if is_on_ground {
 	if hsp == 0 set_anim("idle") else set_anim("run");
 }	
 
-vsp += current_gravity;
+if add_gravity vsp += current_gravity;
 if vsp > gravity_value vsp = gravity_value;
 
 
@@ -85,6 +85,7 @@ else {
 }
  
 #endregion
+
 
 if is_on_ground or is_stuck {
 	current_gravity = 0.0; 

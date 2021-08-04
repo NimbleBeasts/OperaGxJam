@@ -1,7 +1,10 @@
-
-
 function subtract_player_lives(damage, player_num) {
 	if player_num == 1 global.player1_lives -= damage; else global.player2_lives -= damage;
+}
+
+function add_player_score(score, player_num) {
+	if player_num == 1 global.player1_score += score; else global.player2_score += score;
+
 }
 
 function set_camera_pos_correctly() {
@@ -21,9 +24,9 @@ function create_tiles() {
 
 	tile_map = ds_map_create();
 	
-	if (file_exists("test.json")) {
+	if (file_exists("levels.json")) {
 		var data = "";
-		var json = file_text_open_read("test.json");
+		var json = file_text_open_read("levels.json");
 		while(!file_text_eof(json))
 		{
 		   data += file_text_read_string(json);
