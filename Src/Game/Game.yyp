@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"spr_playerDetect","path":"sprites/spr_playerDetect/spr_playerDetect.yy",},"order":10,},
     {"id":{"name":"spr_gunPlasmaRifle","path":"sprites/spr_gunPlasmaRifle/spr_gunPlasmaRifle.yy",},"order":4,},
     {"id":{"name":"obj_ice","path":"objects/obj_ice/obj_ice.yy",},"order":1,},
     {"id":{"name":"snd_trap_spike","path":"sounds/snd_trap_spike/snd_trap_spike.yy",},"order":10,},
@@ -47,6 +48,7 @@
     {"id":{"name":"spr_tileWall","path":"sprites/spr_tileWall/spr_tileWall.yy",},"order":3,},
     {"id":{"name":"obj_enemyBullet","path":"objects/obj_enemyBullet/obj_enemyBullet.yy",},"order":1,},
     {"id":{"name":"obj_weaponSpawner","path":"objects/obj_weaponSpawner/obj_weaponSpawner.yy",},"order":7,},
+    {"id":{"name":"obj_playerDetect","path":"objects/obj_playerDetect/obj_playerDetect.yy",},"order":10,},
     {"id":{"name":"spr_hud_bg","path":"sprites/spr_hud_bg/spr_hud_bg.yy",},"order":0,},
     {"id":{"name":"spr_player1_idle","path":"sprites/spr_player1_idle/spr_player1_idle.yy",},"order":2,},
     {"id":{"name":"spr_player1_run","path":"sprites/spr_player1_run/spr_player1_run.yy",},"order":0,},

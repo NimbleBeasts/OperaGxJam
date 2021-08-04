@@ -1,3 +1,4 @@
+
 function subtract_player_lives(damage, player_num) {
 	if player_num == 1 global.player1_lives -= damage; else global.player2_lives -= damage;
 }
@@ -13,7 +14,9 @@ function set_camera_pos_correctly() {
 	camera_set_view_pos(view_camera[0], 0 , avg_y - half_view_height);
 }
 
+// needs commenting, will do if i feel it
 function create_tiles() {
+
 	randomize();
 	var _level_index = irandom_range(1, global.num_tile_levels);
 	tiles = [];
@@ -49,10 +52,15 @@ function create_tiles() {
 	
 		var _tile_create_y_pos = _array_keys[i][1]*32 + (room_height * global.num_created_tiles);
 	
-		instance_create_layer(_array_keys[i][0]*32, _tile_create_y_pos, "Tiles",  tiles[_array_values[i]]); 
+		 instance_create_layer(_array_keys[i][0]*32, _tile_create_y_pos, "Tiles",  tiles[_array_values[i]]);
 	}
 	
 	global.num_created_tiles += 1;
+	
+	var _player_detect_y = room_height * (global.num_created_tiles + 1);
+	var _player_detect = instance_create_layer(0, _player_detect_y, "PlayerDetect", obj_playerDetect);
+	_player_detect.image_xscale = 10;
+	_player_detect.image_yscale = 0.5;
 }
 
 // from https://www.reddit.com/r/gamemaker/comments/3zxota/splitting_strings/ by u/chaomoonx with minor edits
