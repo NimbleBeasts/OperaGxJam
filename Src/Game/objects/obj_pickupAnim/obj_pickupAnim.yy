@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_coin",
-    "path": "sprites/spr_coin/spr_coin.yy",
+    "name": "spr_pickup",
+    "path": "sprites/spr_pickup/spr_pickup.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
     "path": "folders/Objects/Others.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_coin",
+  "name": "obj_pickupAnim",
   "tags": [],
   "resourceType": "GMObject",
 }
