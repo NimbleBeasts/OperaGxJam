@@ -1,3 +1,4 @@
+
 if (has_been_hit_this_step) {
 	has_been_hit_this_step = false;
 	damage_received = 0;

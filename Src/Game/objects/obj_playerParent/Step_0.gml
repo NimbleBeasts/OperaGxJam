@@ -74,7 +74,7 @@ if !keyboard_check(key_right) and !keyboard_check(key_left) hsp = lerp(hsp, 0, 0
 #region check if grounded
 
 
-if place_meeting(x, y + current_gravity + 2, obj_tileWall) {
+if place_meeting(x, y + current_gravity + 2, obj_tileWall) or place_meeting(x, y + current_gravity + 2, obj_tileDecay) {
 	if player_num == 1 global.player1_on_ground = true; else global.player2_on_ground = true;
 	is_on_ground = true;
 }

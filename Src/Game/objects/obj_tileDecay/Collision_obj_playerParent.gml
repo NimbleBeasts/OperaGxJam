@@ -11,3 +11,7 @@
 
 
 */
+if not collided {
+	collided = true;
+	alarm[0] = 0.8 * room_speed;
+}

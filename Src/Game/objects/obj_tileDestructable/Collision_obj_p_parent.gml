@@ -7,3 +7,9 @@
  3. alarm -> delete
 
 */
+
+if not collided {
+	collided = true;
+	image_speed = 1;
+	solid = false;
+}
