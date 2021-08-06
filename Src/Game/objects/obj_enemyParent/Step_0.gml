@@ -1,4 +1,3 @@
-
 if (has_been_hit_this_step) {
 	has_been_hit_this_step = false;
 	damage_received = 0;
@@ -13,3 +12,5 @@ if distance_to_point(_nearest_player.x, _nearest_player.y) > 20 {
 } else {
 	speed = 0;
 }
+
+if _nearest_player.x > x image_xscale = 1; else image_xscale = -1;
