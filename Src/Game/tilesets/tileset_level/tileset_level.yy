@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tileset_deco",
-    "path": "sprites/spr_tileset_deco/spr_tileset_deco.yy",
+    "name": "spr_tileset_level",
+    "path": "sprites/spr_tileset_level/spr_tileset_level.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
@@ -292,7 +292,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
-  "name": "tileset_deco",
+  "name": "tileset_level",
   "tags": [],
   "resourceType": "GMTileSet",
 }
