@@ -16,7 +16,6 @@ function set_camera_pos_correctly() {
 
 // needs commenting, will do if i feel it
 function create_tiles() {
-
 	randomize();
 	var _level_index = irandom_range(1, global.num_tile_levels);
 	tiles = [];
@@ -44,6 +43,7 @@ function create_tiles() {
 	
 	var _array_keys = ds_map_keys_to_array(tile_map);
 	var _array_values = ds_map_values_to_array(tile_map);
+	var _list = ds_list_create();
 	
 	for (var i = 0; i < array_length(_array_keys); i++) {
 		_array_keys[i] = split_string(_array_keys[i], ",");
@@ -52,15 +52,28 @@ function create_tiles() {
 	
 		var _tile_create_y_pos = _array_keys[i][1]*32 + (room_height * global.num_created_tiles);
 	
-		 instance_create_layer(_array_keys[i][0]*32, _tile_create_y_pos, "Tiles",  tiles[_array_values[i]]);
+		 var _tile_inst = instance_create_layer(_array_keys[i][0]*32, _tile_create_y_pos, "Tiles",  tiles[_array_values[i]]);
+		 ds_list_add(_list, _tile_inst);
 	}
 	
 	global.num_created_tiles += 1;
-	
+	ds_map_add(global.tiles_to_delete, global.num_created_tiles, _list);
+
 	var _player_detect_y = room_height * (global.num_created_tiles + 1);
 	var _player_detect = instance_create_layer(0, _player_detect_y, "PlayerDetect", obj_playerDetect);
 	_player_detect.image_xscale = 10;
 	_player_detect.image_yscale = 0.5;
+}
+
+function delete_tiles() {
+	if not ds_map_exists(global.tiles_to_delete, global.num_created_tiles - 2) return;
+	
+	
+	var _list = global.tiles_to_delete[? (global.num_created_tiles - 2) ];
+	for (i = 0; i < ds_list_size(_list); i++) {
+		instance_destroy(_list[| i]);
+		ds_map_delete(global.tiles_to_delete, global.num_created_tiles - 2);
+	}
 }
 
 // from https://www.reddit.com/r/gamemaker/comments/3zxota/splitting_strings/ by u/chaomoonx with minor edits
