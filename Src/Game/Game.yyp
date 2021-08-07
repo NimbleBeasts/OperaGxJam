@@ -82,6 +82,8 @@
     {"id":{"name":"spr_enemyBullet","path":"sprites/spr_enemyBullet/spr_enemyBullet.yy",},"order":1,},
     {"id":{"name":"spr_player1_jump","path":"sprites/spr_player1_jump/spr_player1_jump.yy",},"order":1,},
     {"id":{"name":"snd_weapon_change","path":"sounds/snd_weapon_change/snd_weapon_change.yy",},"order":11,},
+    {"id":{"name":"spr_teleportEnemy","path":"sprites/spr_teleportEnemy/spr_teleportEnemy.yy",},"order":7,},
+    {"id":{"name":"obj_teleportEnemy","path":"objects/obj_teleportEnemy/obj_teleportEnemy.yy",},"order":7,},
     {"id":{"name":"spr_gunRocketLauncher","path":"sprites/spr_gunRocketLauncher/spr_gunRocketLauncher.yy",},"order":5,},
     {"id":{"name":"obj_tileGround","path":"objects/obj_tileGround/obj_tileGround.yy",},"order":0,},
     {"id":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},"order":3,},

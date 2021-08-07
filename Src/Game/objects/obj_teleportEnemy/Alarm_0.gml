@@ -1,0 +1,3 @@
+///@description teleportation timer
+
+teleport();
