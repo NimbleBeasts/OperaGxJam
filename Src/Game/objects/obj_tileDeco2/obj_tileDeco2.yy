@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_spike",
-    "path": "sprites/spr_spike/spr_spike.yy",
+    "name": "spr_tileDeco2",
+    "path": "sprites/spr_tileDeco2/spr_tileDeco2.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,11 +24,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Traps",
-    "path": "folders/Objects/Traps.yy",
+    "name": "Tiles",
+    "path": "folders/Objects/Tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_spike",
+  "name": "obj_tileDeco2",
   "tags": [],
   "resourceType": "GMObject",
 }

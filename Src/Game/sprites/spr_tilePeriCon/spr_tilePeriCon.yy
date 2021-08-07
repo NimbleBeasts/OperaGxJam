@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e7417cd2-8d90-4a9f-aa87-2ba1c4b2fb5e","path":"sprites/spr_tileWall/spr_tileWall.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e7417cd2-8d90-4a9f-aa87-2ba1c4b2fb5e","path":"sprites/spr_tileWall/spr_tileWall.yy",},"LayerId":{"name":"9e025126-5b36-4397-8e83-342d3e75ed43","path":"sprites/spr_tileWall/spr_tileWall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_tileWall","path":"sprites/spr_tileWall/spr_tileWall.yy",},"resourceVersion":"1.0","name":"e7417cd2-8d90-4a9f-aa87-2ba1c4b2fb5e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"c3ceb5a8-f470-404a-aff5-6cb48cd9234e","path":"sprites/spr_tilePeriCon/spr_tilePeriCon.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"c3ceb5a8-f470-404a-aff5-6cb48cd9234e","path":"sprites/spr_tilePeriCon/spr_tilePeriCon.yy",},"LayerId":{"name":"50e7a9e2-9233-4c0a-84ad-0beed76b5f9a","path":"sprites/spr_tilePeriCon/spr_tilePeriCon.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_tilePeriCon","path":"sprites/spr_tilePeriCon/spr_tilePeriCon.yy",},"resourceVersion":"1.0","name":"c3ceb5a8-f470-404a-aff5-6cb48cd9234e","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_tileWall","path":"sprites/spr_tileWall/spr_tileWall.yy",},
+    "spriteId": {"name":"spr_tilePeriCon","path":"sprites/spr_tilePeriCon/spr_tilePeriCon.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e2e084b4-30b6-46d2-8806-d683536b7287","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e7417cd2-8d90-4a9f-aa87-2ba1c4b2fb5e","path":"sprites/spr_tileWall/spr_tileWall.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4441fc82-3c5c-4e48-ac2e-10adc34a187d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c3ceb5a8-f470-404a-aff5-6cb48cd9234e","path":"sprites/spr_tilePeriCon/spr_tilePeriCon.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_tileWall","path":"sprites/spr_tileWall/spr_tileWall.yy",},
+    "parent": {"name":"spr_tilePeriCon","path":"sprites/spr_tilePeriCon/spr_tilePeriCon.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_tileWall",
+    "name": "spr_tilePeriCon",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9e025126-5b36-4397-8e83-342d3e75ed43","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"50e7a9e2-9233-4c0a-84ad-0beed76b5f9a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Tiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_tileWall",
+  "name": "spr_tilePeriCon",
   "tags": [],
   "resourceType": "GMSprite",
 }
