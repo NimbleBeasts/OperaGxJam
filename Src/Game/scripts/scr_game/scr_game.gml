@@ -20,10 +20,10 @@ function create_tiles() {
 	randomize();
 	var _level_index = irandom_range(1, global.num_tile_levels);
 	tiles = [];
-	tiles[0] = obj_tileWall;
+	tiles[0] = obj_tileLeftEnd;
 	tiles[1] = obj_tileGround;
 	tiles[2] = obj_tileRightEnd;
-	tiles[3] = obj_tileLeftEnd;
+	tiles[3] = obj_tileWall;
 
 	tile_map = ds_map_create();
 	
